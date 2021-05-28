@@ -11,10 +11,10 @@
     <div id="root">
         <div class="disc_collection">
             <div class="disc_card" v-for="disc in discs">
-                <img src="" alt="">
-                <h1>{{discs.author}}</h1>
-                <div>{{discs.title}}</div>
-                <div>{{discs.year}}</div>
+                <img :src="disc.poster" alt="">
+                <h2 class="title">{{disc.title}}</h2>
+                <div class="author">{{disc.author}}</div>
+                <div class="year">{{disc.year}}</div>
 
             </div>
         </div>
