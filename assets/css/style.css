@@ -7,21 +7,30 @@
 body{
     background-color: rgba(30, 45, 59, 1);
 }
+.header{
+    height: 120px;
+    display: flex;
+    align-items: center;
+    background-color: rgba(46, 58, 70, 1);
+}
 .disc_collection{
     display: flex;
     flex-wrap: wrap;
     align-content: center;
     justify-content: center;
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 5rem;
 }
 .disc_card{
     display: flex;
     flex-direction: column;
-    align-content: center;
-    align-items: center;
     margin: 1.5rem;
     background-color: rgba(46, 58, 70, 1);
     padding: 2rem 2rem 2rem 2rem;
-    width: 300px;
+    width: 250px;
+    justify-content: space-between;
+    align-items: center;
 }
 .disc_card > img{
     height: 200px;
@@ -31,4 +40,13 @@ body{
     color: white;
     text-transform: uppercase;
     text-align: center;
+}
+.author,
+.year{
+    color: rgba(128, 128, 128, 1);
+}
+.logo{
+    height: 80px;
+    width: 80px;
+    margin-left: 1.5rem;
 }
